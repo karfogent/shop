@@ -120,7 +120,29 @@ header {
     object-fit: cover;
     display: block;
 }
+
+/* order quanity */
+.order-quanity>span{
+    font-size: 2rem;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.quanity{
+    margin: 25px 0px 25px 10px;
+    background-color: rgb(128, 0, 110);
+    color: white;
+    font-size: 1.8rem;
+    height: 50px;
+    padding: 20px 10px 10px;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
+
 /* form */
+
 .section-form{
     text-align: center;
 }
