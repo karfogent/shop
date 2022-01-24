@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/right.PNG">
     <title>Shop</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
             <div class="main-item">
                 <img src="image/photo.png" alt="" height="250"><br>
                 <span>Футболка<br>499 руб.</span>
-                <button>Добавить в заказ</button>
+                <button >Добавить в заказ</button>
             </div>
             <div class="main-item">
                 <img src="image/photo_1.png" alt="" height="250"><br>
@@ -76,30 +77,32 @@
         </div>
     </div>
     <section class="section-form">
-        <form action="#" method="get" enctype="multipart/form-data">
-            <span>Оформление заказа:</span>
+        <form action="#" method="get" enctype="multipart/form-data" class="order-form">
+            <div class="order-heading">Оформление заказа:</div>
             <div>
-                <legend>Имя</legend>
+                <label>Имя:</label>
                 <input type="text" name="firstname" placeholder="Имя">
             </div>
 
             <div>
-                <legend>Фамилия</legend>
+                <label>Фамилия:</label>
                 <input type="text" name="surname" placeholder="Фамилия">
             </div>
 
             <div>
-                <legend>Электронная почта</legend>
+                <label>Электронная почта:</label>
                 <input type="email" name="email" placeholder="Электронная почта">
             </div>
                 
             <div>
-                <legend>Телефон</legend>
+                <legend>Телефон:</legend>
                 <input type="tel" name="tel" placeholder="Телефон">
             </div>
             <button type="submit">Перейти к оплате</button>
         </form>
     </section>
+    <!-- Фиксированная поддержка -->
+    <img onclick="print_contact()" src="image/tp.png" alt="Фиксированная поддержка" class="support" height="100">
 </body>
 
 </html>

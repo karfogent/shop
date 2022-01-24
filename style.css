@@ -145,17 +145,26 @@ header {
 
 .section-form{
     text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form{
+    text-align: left;
     margin: 20px;
     font-size: 1.5rem;
     font-family: monospace;
 }
 
+.order-heading{
+    margin-bottom: 20px;
+}
+
 form input{
-    margin: 10px;
-    padding: 12px;
+    width: 300px;
+    margin: 10px 0px 20px;
+    padding: 12px 10px;
+    box-shadow: 5px 5px 0px;
     box-sizing: border-box;
     border-radius: 4px;
     background-color: rgb(214, 212, 212);
@@ -169,6 +178,7 @@ form button{
     padding: 10px;
     height: 60px;
     width: 200px;
+    font-size: 1.1rem;
     margin-top: 25px;
     border-radius: 15px;
     background-color: rgb(116, 0, 116);
@@ -178,4 +188,15 @@ form button{
 
 form button:hover{
     border: 5px double white;
+}
+
+::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(116, 0, 116, 0.452);
+}
+/* Фиксированная поддержка */
+.support{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
