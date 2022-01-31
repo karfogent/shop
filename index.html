@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/right.PNG">
     <title>Shop</title>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,13 +22,13 @@
             <span class="why-cheap">Почему так дёшево?</span>
         </div>
 
-        <div class="header-imgs">
+        <div class="header-imgs animate__animated">
             <div>
                 <img src="image/sale.png" alt="sale png" class="header-image"> <br>
                 <span>Низкие цены</span>
             </div>
             <div>
-                <img src="image/gruzovik.png" alt="gruzovik" class="header-image"> <br>
+                <img src="image/gruzovik.png" alt="gruzovik" class="header-image animate__animated animate__slideInRight"> <br>
                 <span>Доставка по всей России</span>
             </div>
             <div>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <!-- main -->
-    <main>
+    <main >
         <div class="main-text">
             <span class="futbolki">Футболки</span><br>
             <span class="hlopok">100% хлопок</span>
@@ -70,13 +70,13 @@
         </div>
     </section>
     <!-- your order -->
-    <div class="order-quanity">
+    <div class="order-quanity animate__animated animate__zoomIn wow">
         <span>Ваш заказ</span>
         <div class="quanity">
             <span>Корзина пуста</span>
         </div>
     </div>
-    <section class="section-form">
+    <section class="section-form animate__animated animate__zoomIn wow">
         <form action="#" method="get" enctype="multipart/form-data" class="order-form">
             <div class="order-heading">Оформление заказа:</div>
             <div>
@@ -101,8 +101,13 @@
             <button type="submit">Перейти к оплате</button>
         </form>
     </section>
-    <!-- Фиксированная поддержка -->
+    <!-- Фиксированная поддержка и подарок-->
     <img onclick="print_contact()" src="image/tp.png" alt="Фиксированная поддержка" class="support" height="100">
+    <img src="image/podarok.png" alt="gift" class="gift-picture animate__animated animate__shakeY" height="80">
+    <!-- Подключение библиотеки wow/js и файла js-->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
